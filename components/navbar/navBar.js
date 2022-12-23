@@ -28,7 +28,7 @@ export default function Navbar() {
           height={24}
           priority
         />
-        <ul className={style.navlinks}>
+        <ul className={style.links}>
           <li className={router.pathname == "/" ? `${style.active}` : ""}>
             <Link href="/">Home</Link>
           </li>

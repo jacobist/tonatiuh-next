@@ -1,6 +1,8 @@
 .active{
-  font-size: 1.3rem;
-}.linktomain {
+  /* font-size: 1.3rem; */
+  border-bottom: 1px solid white;
+}
+.linktomain {
   position: absolute;
   left: -9999px;
   z-index:  999;
@@ -8,9 +10,7 @@
   background-color: black;
   color: white;
   opacity: 0;
-}
-
-.link-to-main:focus {
+}.link-to-main:focus {
   left: 50%;
   transform: translateX(-50%);
   opacity: 1;
@@ -23,7 +23,7 @@
   color: white;
   padding: 4rem;
 }
-.navlinks{
+.links{
   width: 40%;
   display:flex;
   justify-content: space-around;
