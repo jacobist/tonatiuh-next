@@ -2,17 +2,17 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import style from './navBar.module.css'
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 // list for dynamic Navigation Menu Items
 const menuList = [
   {page: 'Portraits', href: "/portraits"},
   {page: 'Couples', href:'/couples'},
-  {page: 'Collection', href:'/collection'},
-  {page: 'Booking', href:'/booking'}
+  {page: 'Collection', href:'/collection'}
 ]
 
 export default function Navbar() {
-  // for active link tracking
+// for active link tracking
   const router = useRouter()
   return (
     <>
@@ -32,16 +32,32 @@ export default function Navbar() {
           <li className={router.pathname == "/" ? `${style.active}` : ""}>
             <Link href="/">Home</Link>
           </li>
+          {/* dynamic menu item links*/}
           {menuList.map((item) => {
             return (
               <li
                 key={item.page}
-                className={router.pathname == `${item.href}` ? `${style.active}` : ""}
+                className={
+                  router.pathname == `${item.href}` ? `${style.active}` : ""
+                }
               >
                 <Link href={item.href}>{item.page}</Link>
               </li>
             );
           })}
+          <li>
+            <a href="#">
+              <FaFacebookF />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <FaInstagram />
+            </a>
+          </li>
+          <li>
+            <Link className={style.cta} href='/booking'>Book A Session</Link>
+          </li>
         </ul>
       </nav>
     </>
