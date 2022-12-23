@@ -36,7 +36,7 @@ export default function Navbar() {
             return (
               <li
                 key={item.page}
-                className={router.pathname == `${item.page}` ? "active" : ""}
+                className={router.pathname == `${item.href}` ? `${style.active}` : ""}
               >
                 <Link href={item.href}>{item.page}</Link>
               </li>
