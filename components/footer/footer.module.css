@@ -1,0 +1,14 @@
+.footer{
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+  background-color: black;
+  color:white;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+}
+.right{
+  
+}
