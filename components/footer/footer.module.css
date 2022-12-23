@@ -10,5 +10,8 @@
   flex-direction: column;
 }
 .right{
-  
+  text-align: end;
+}
+.vercelLogo {
+  filter: invert(1);
 }

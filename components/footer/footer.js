@@ -18,8 +18,8 @@ export default function Footer() {
       />
       <div className={style.right}>
         <p>
-          © Hermes Tonatiuh Photography & Design.{" "}
-          <span>All Rights Reserved</span>
+          © Hermes Tonatiuh Photography & Design.<br/>
+          All Rights Reserved.
         </p>
       </div>
     </footer>
