@@ -1,0 +1,31 @@
+.textsm{
+  font-weight: 300;
+}
+.textLg{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.textXL {
+  font-weight: 500;
+  font-size: 2.9rem;
+  line-height: 4rem;
+  letter-spacing: -.01rem;
+}.text2XL {
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+.cta{
+  font-weight: 500;
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  width:fit-content;
+}
+.ctaContrast {
+  font-weight: 500;
+  color: black;
+  background-color: white;
+  padding: 1rem;
+  width:fit-content;
+}
