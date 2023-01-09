@@ -40,7 +40,6 @@ export default function Home() {
               alt="filler"
               width={550}
               height={700}
-              priority
             />
           </div>
         </section>
@@ -63,7 +62,7 @@ export default function Home() {
               Perfect Light, he is helping clients find their creative visions.
             </p>
             <p className={generic.textsm}>
-              Santiago’s hope in every image he captures is to encourage an
+              Santiago&apos;s hope in every image he captures is to encourage an
               unique expression through the visual arts.
             </p>
           </div>
@@ -73,7 +72,6 @@ export default function Home() {
               alt="filler"
               width={420}
               height={550}
-              priority
             />
           </div>
         </section>
@@ -99,18 +97,17 @@ export default function Home() {
               alt="filler"
               width={420}
               height={420}
-              priority
             />
           </div>
         </section>
 
         <section className={style.deck}>
-          <h2>How does it work?</h2>
+          <h2 className={generic.textXL}>How does it work?</h2>
           <div className={style.cards}>
             <div className={style.card}>
-                <IconContext.Provider value={{className:`${style.icon}`}}>
-              <FaPhoneAlt/>
-                </IconContext.Provider>
+              <IconContext.Provider value={{ className: `${style.icon}` }}>
+                <FaPhoneAlt />
+              </IconContext.Provider>
               <h3 className={generic.cardHead}>Phone Call</h3>
               <p className={generic.cardBody}>
                 The beginning of the story. We will discuss what you are looking
@@ -118,9 +115,9 @@ export default function Home() {
               </p>
             </div>
             <div className={style.card}>
-                <IconContext.Provider value={{className:`${style.icon}`}}>
-              <IoPeopleSharp />
-                </IconContext.Provider>
+              <IconContext.Provider value={{ className: `${style.icon}` }}>
+                <IoPeopleSharp />
+              </IconContext.Provider>
               <h3 className={generic.cardHead}>In-Person Consultation</h3>
               <p className={generic.cardBody}>
                 In your house or your favorite coffee shop, we will go over all
@@ -128,9 +125,9 @@ export default function Home() {
               </p>
             </div>
             <div className={style.card}>
-                <IconContext.Provider value={{className:`${style.icon}`}}>
-              <FaCamera />
-                </IconContext.Provider>
+              <IconContext.Provider value={{ className: `${style.icon}` }}>
+                <FaCamera />
+              </IconContext.Provider>
               <h3 SclassName={generic.cardHead}>Photo Shoot Day</h3>
               <p className={generic.cardBody}>
                 The day is here! We will meet in location or at the studio, you
@@ -138,9 +135,9 @@ export default function Home() {
               </p>
             </div>
             <div className={style.card}>
-                <IconContext.Provider value={{className:`${style.icon}`}}>
-              <FaPhotoVideo />
-                </IconContext.Provider>
+              <IconContext.Provider value={{ className: `${style.icon}` }}>
+                <FaPhotoVideo />
+              </IconContext.Provider>
               <h3 className={generic.cardHead}>Ordering Session</h3>
               <p className={generic.cardBody}>
                 Last part! we pick your favorite images and pick the products
@@ -149,7 +146,61 @@ export default function Home() {
             </div>
           </div>
           <Link className={generic.cta} href="/booking">
-            Learn More
+            Book your Session
+          </Link>
+        </section>
+
+        <section className={style.deck}>
+          <h2 className={generic.textXL}>Featured Services</h2>
+          <div className={style.cards}>
+            <div className={style.card}>
+              <Image
+                src="/imageFiller.png"
+                alt="filler"
+                width={380}
+                height={240}
+              />
+              <h3 SclassName={generic.cardHead}>Photo Shoot Day</h3>
+              <p className={generic.cardBody}>
+                Whether you need professional headshots, senior portraits,
+                portraits for fun or anything in between. We will get the best
+                light for you and capture your personality.
+              </p>
+            </div>
+            <div className={style.card}>
+              <Image
+                src="/imageFiller.png"
+                alt="filler"
+                width={380}
+                height={240}
+              />
+              <h3 SclassName={generic.cardHead}>Photo Shoot Day</h3>
+              <p className={generic.cardBody}>
+                It all begins with an idea. We make it a reality. The Artist’s
+                Collection takes photography to it’s maximum artistic potential
+                and creates the most larger-than-life photographs for you. The
+                Artist’s Collection includes Under The Stars, Submerged, The
+                Conceptual Series and Destination Photography but does not stop
+                there, the limit is your imagination.
+              </p>
+            </div>
+            <div className={style.card}>
+              <Image
+                src="/imageFiller.png"
+                alt="filler"
+                width={380}
+                height={240}
+              />
+              <h3 SclassName={generic.cardHead}>Photo Shoot Day</h3>
+              <p className={generic.cardBody}>
+                You business requires your attention in all aspects of it. Here
+                we take the weight of marketing and creative branding out of
+                your back. We produce spectacular content for your brand.
+              </p>
+            </div>
+          </div>
+          <Link className={generic.cta} href="/booking">
+            Book your Session
           </Link>
         </section>
 
@@ -160,10 +211,9 @@ export default function Home() {
               alt="filler"
               width={1100}
               height={280}
-              priority
             />
             <Link className={`${generic.cta} ${style.overlay}`} href="/booking">
-              Book A Session
+              INSTAGRAM
             </Link>
           </div>
         </section>
