@@ -1,5 +1,6 @@
 .textsm{
   font-weight: 300;
+  line-height: 2rem;
 }
 .textLg{
   font-size: 1.5rem;
@@ -19,13 +20,13 @@
   font-weight: 500;
   color: white;
   background-color: black;
-  padding: 1rem;
+  padding: 1.2rem 1.8rem;
   width:fit-content;
 }
 .ctaContrast {
   font-weight: 500;
   color: black;
   background-color: white;
-  padding: 1rem;
+  padding: 1.2rem 1.8rem;
   width:fit-content;
 }
