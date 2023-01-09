@@ -1,10 +1,10 @@
 import Link from 'next/link'
+import Contact from '../components/form/contact'
 
 export default function Booking() {
     return (
       <>
-        <h1>Booking Page</h1>
-        <Link href="/">Back to home</Link>
+        <Contact/>
       </>
-    );
+    )
 }
