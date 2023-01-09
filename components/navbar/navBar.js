@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import style from './navBar.module.css'
+import generic from '../../styles/generic.module.css'
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 // list for dynamic Navigation Menu Items
@@ -56,7 +57,7 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <Link className={style.cta} href='/booking'>Book A Session</Link>
+            <Link className={generic.ctaContrast} href='/booking'>Book A Session</Link>
           </li>
         </ul>
       </nav>

@@ -1,26 +1,13 @@
-.active{
-  border-bottom: 1px solid white;
-}
-.linktomain {
-  position: absolute;
-  left: -9999px;
-  z-index:  999;
-  padding: 1em;
-  background-color: black;
-  color: white;
-  opacity: 0;
-}.link-to-main:focus {
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 1;
-}
 .navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(0, 0, 0);
   color: white;
-  padding: 3.5rem 7rem;
+  padding: 3.5rem 9rem;
+}
+.active {
+  border-bottom: 1px solid white;
 }
 .links{
   width: 40rem;
@@ -29,12 +16,20 @@
   align-items: center;
   list-style: none;
 }
-.cta{
-  font-weight: 500;
-  color: black;
-  background-color: white;
-  padding: 1rem;
-}
 .vercelLogo{
   filter: invert(1);
+}
+.linktomain {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0;
+}
+.link-to-main:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
 }
