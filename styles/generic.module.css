@@ -2,9 +2,13 @@
   font-weight: 300;
   line-height: 2rem;
 }
-.textLg{
+.textM{
   font-size: 1.5rem;
   font-weight: 300;
+}
+.textLg{
+  font-size: 2.1rem;
+  font-weight: 500;
 }
 .textXL {
   font-weight: 500;
