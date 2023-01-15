@@ -86,7 +86,7 @@ export default function Contact ({home=false}) {
               name="service"
               value="portraits"
             />
-            <label htmlFor="portraits">Portraits</label>
+            <label htmlFor="portraits"> Portraits</label>
           </div>
           <div>
             <input
@@ -95,7 +95,7 @@ export default function Contact ({home=false}) {
               name="service"
               value="couples"
             />
-            <label htmlFor="couples">Couples</label>
+            <label htmlFor="couples"> Couples</label>
           </div>
           <div>
             <input
@@ -104,7 +104,7 @@ export default function Contact ({home=false}) {
               name="service"
               value="productPhotography"
             />
-            <label htmlFor="productPhotography">Product Photography</label>
+            <label htmlFor="productPhotography"> Product Photography</label>
           </div>
         </fieldset>
         <div className={style.input}>
