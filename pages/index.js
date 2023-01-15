@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import Contact from '../components/form/contact'
 import style from '../styles/Home.module.css'
 import generic from '../styles/generic.module.css'
 import { FaPhoneAlt, FaCamera, FaPhotoVideo } from "react-icons/fa";
@@ -27,9 +28,7 @@ export default function Home() {
             <h2 className={generic.textXL}>
               Creating breathtaking images for you
             </h2>
-            <p className={generic.textLg}>
-              And amazing memories along the way!
-            </p>
+            <p className={generic.textM}>And amazing memories along the way!</p>
             <Link className={generic.cta} href="/booking">
               Book A Session
             </Link>
@@ -100,7 +99,6 @@ export default function Home() {
             />
           </div>
         </section>
-
         <section className={style.deck}>
           <h2 className={generic.textXL}>How does it work?</h2>
           <div className={style.cards}>
@@ -149,7 +147,6 @@ export default function Home() {
             Book your Session
           </Link>
         </section>
-
         <section className={style.deck}>
           <h2 className={generic.textXL}>Featured Services</h2>
           <div className={style.cards}>
@@ -160,7 +157,7 @@ export default function Home() {
                 width={380}
                 height={240}
               />
-              <h3 SclassName={generic.cardHead}>Photo Shoot Day</h3>
+              <h3 className={generic.textLg}>Portraiture</h3>
               <p className={generic.cardBody}>
                 Whether you need professional headshots, senior portraits,
                 portraits for fun or anything in between. We will get the best
@@ -174,7 +171,7 @@ export default function Home() {
                 width={380}
                 height={240}
               />
-              <h3 SclassName={generic.cardHead}>Photo Shoot Day</h3>
+              <h3 className={generic.textLg}>The Artist’s Collection</h3>
               <p className={generic.cardBody}>
                 It all begins with an idea. We make it a reality. The Artist’s
                 Collection takes photography to it’s maximum artistic potential
@@ -191,7 +188,7 @@ export default function Home() {
                 width={380}
                 height={240}
               />
-              <h3 SclassName={generic.cardHead}>Photo Shoot Day</h3>
+              <h3 className={generic.textLg}>Commercial</h3>
               <p className={generic.cardBody}>
                 You business requires your attention in all aspects of it. Here
                 we take the weight of marketing and creative branding out of
@@ -204,6 +201,7 @@ export default function Home() {
           </Link>
         </section>
 
+        <Contact home={true}/>
         <section className={style.section}>
           <div className={style.background}>
             <Image
