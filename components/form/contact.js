@@ -6,7 +6,7 @@ import generic from "../../styles/generic.module.css";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 
-export default function Contact () {
+export default function Contact ({home=false}) {
   const form = useRef(null);
   const [sent, setSent] = useState(false);
 
@@ -25,10 +25,10 @@ export default function Contact () {
           <div>
             <h3>Let&apos;s create!</h3>
             <p>Tonatiuh@gmail.com</p>
-            <br/>
+            <br />
             <p>(661) 406-1519</p>
           </div>
-          <Image src="/imageFiller.png" alt="filler" width="250" height="250" />
+          { !home ? <Image src="/imageFiller.png" alt="filler" width="250" height="250" /> : '' }
         </div>
         <div className={style.links}>
           <a href="#">
@@ -48,45 +48,39 @@ export default function Contact () {
       >
         <div className={style.input}>
           <label htmlFor="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="name" />
+          <input className={style.field} type="text" id="name" name="name" />
         </div>
         <div className={style.input}>
           <label htmlFor="company">Company</label>
           <input
+            className={style.field}
             type="text"
             id="company"
             name="company"
-            placeholder="optional"
+            placeholder=" optional"
           />
         </div>
         <div className={style.input}>
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="e-mail" />
+          <input className={style.field} type="email" id="email" name="email" />
         </div>
         <div className={style.input}>
           <label htmlFor="phone">Phone</label>
           <input
+            className={style.field}
             type="tel"
             id="phone"
             name="phone"
-            placeholder="(000)000-0000"
+            placeholder=" (000)000-0000"
           />
         </div>
-        <div className={style.input}>
-          <label htmlFor="message">Message</label>
-          <textarea
-            maxLength="400"
-            id="message"
-            name="message"
-            placeholder="messsage"
-          />
-        </div>
-        <fieldset>
+        <fieldset className={style.fieldset}>
           <legend>
             <p>Services</p>
           </legend>
           <div>
             <input
+              className={style.field}
               id="portraits"
               type="checkbox"
               name="service"
@@ -109,11 +103,20 @@ export default function Contact () {
               type="checkbox"
               name="service"
               value="productPhotography"
-              />
+            />
             <label htmlFor="productPhotography">Product Photography</label>
           </div>
         </fieldset>
-        <button>{sent ? "Sent!" : "Send Message"}</button>
+        <div className={style.input}>
+          <label htmlFor="message">Message</label>
+          <textarea
+            className={style.field}
+            maxLength="400"
+            id="message"
+            name="message"
+          />
+        </div>
+        <button className={generic.cta}>{sent ? "Sent!" : "Send Message"}</button>
       </form>
     </main>
   );
