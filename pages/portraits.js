@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Slideshow from '../components/slideshow/slideshow';
 
 export default function Portraits() {
     return (
@@ -8,8 +9,7 @@ export default function Portraits() {
           <title>Portraits</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <h1> Portraits page</h1>
-        <Link href="/">Back to home</Link>
+        <Slideshow/>
       </>
     );
 }
