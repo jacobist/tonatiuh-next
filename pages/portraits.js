@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Slideshow from '../components/slideshow/slideshow';
+import filler from '../public/imageFiller.png'
+import fillerAlt from '../public/imageFillerVertical.png'
 
 export default function Portraits() {
     return (
@@ -9,7 +11,15 @@ export default function Portraits() {
           <title>Portraits</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Slideshow/>
+        <Slideshow
+          slides={[
+            filler,
+            fillerAlt,
+            filler,
+            fillerAlt,
+            filler,
+            fillerAlt]}
+        />
       </>
     );
 }
