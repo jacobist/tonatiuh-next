@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import Slideshow from '../components/slideshow/slideshow'
 import style from '../styles/Portraits.module.css'
 import generic from '../styles/generic.module.css'
@@ -21,7 +22,32 @@ export default function Portraits() {
         />
         <main className={style.main}>
           <section className={style.section}>
-
+            <div className={style.segment}>
+              <Image
+                src="/imageFillerVertical.png"
+                alt="filler"
+                width={550}
+                height={650}
+              />
+            </div>
+            <div className={style.segment}>
+              <h2 className={generic.textXL}>
+                Portraits that tell your story.
+              </h2>
+              <p className={generic.textM}>
+                Unforgettable photography experience that reflects your unique
+                energy on every image.
+              </p>
+              <Link className={generic.cta} href="/booking">
+                Book A Session
+              </Link>
+            </div>
+          </section>
+          <section className={style.banner}>
+            <p>
+              Portraits that bring your true essence in them, your personality
+              and your energy. Portraits that are YOURS.
+            </p>
           </section>
           <section className={style.deck}>
             <h2 className={generic.textXL}>How does it work?</h2>
@@ -71,6 +97,75 @@ export default function Portraits() {
             <Link className={generic.cta} href="/booking">
               Book your Session
             </Link>
+          </section>
+          <section className={style.section}>
+            <div className={style.gallery}>
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image src={fillerAlt} alt="" width={300} height={400} />
+            </div>
+          </section>
+          <section className={style.sectionInvert}>
+            <div className={style.segment}>
+              <h2 className={generic.text2XL}>Model Test Shoot</h2>
+              <p className={generic.textM}>
+                Starting in the modeling world requires a great portfolio as a
+                head start. Here I can help you to have your best look and be
+                ready to start booking jobs.
+              </p>
+              <Link className={generic.ctaContrast} href="/booking">
+                Book A Session
+              </Link>
+            </div>
+            <div className={style.segment}>
+              <Image
+                src="/imageFillerVertical.png"
+                alt="filler"
+                width={550}
+                height={450}
+              />
+            </div>
+          </section>
+          <section className={style.section}>
+            <div className={style.segment}>
+              <p className={generic.textM}>
+                New York City and Washington DC Photography
+              </p>
+              <h2 className={generic.textXL}>
+                Photography in these two beautiful cities has never been better.
+              </h2>
+              <p className={generic.textsm}>
+                All services are now offered in NYC and DC.
+              </p>
+              <p className={generic.textsm}>
+                Suitcase and camera ready for any place within the US. Contact
+                us for more information.
+              </p>
+              <Link className={generic.cta} href="/booking">
+                Book A Session
+              </Link>
+            </div>
+            <div className={style.segment}>
+              <Image
+                src="/imageFillerVertical.png"
+                alt="filler"
+                width={550}
+                height={550}
+              />
+            </div>
           </section>
         </main>
       </>

@@ -9,6 +9,39 @@
   width: 100%;
   padding: 5rem 0;
 }
+.sectionInvert {
+  display: inherit;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 5rem 0;
+  background-color: black;
+  color:white;
+}
+.segment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2.1rem;
+  width: 550px;
+}
+.banner {
+  display: inherit;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 1.5rem 16rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;;
+}
 .deck{
   display: flex;
   flex-direction: column;
