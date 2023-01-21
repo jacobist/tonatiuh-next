@@ -1,0 +1,14 @@
+.slider{
+  position:relative;
+  height: 20rem;
+  width: 100vw;
+  margin: 0 auto;
+}
+.show{
+  display: flex;
+}
+.slide{
+  position: relative;
+  width: 250px;
+  height: 300px;
+}
