@@ -106,8 +106,8 @@ export default function Home() {
               <IconContext.Provider value={{ className: `${style.icon}` }}>
                 <FaPhoneAlt />
               </IconContext.Provider>
-              <h3 className={generic.cardHead}>Phone Call</h3>
-              <p className={generic.cardBody}>
+              <h3>Phone Call</h3>
+              <p>
                 The beginning of the story. We will discuss what you are looking
                 for, we book your session and lock in your session date.
               </p>
@@ -116,8 +116,8 @@ export default function Home() {
               <IconContext.Provider value={{ className: `${style.icon}` }}>
                 <IoPeopleSharp />
               </IconContext.Provider>
-              <h3 className={generic.cardHead}>In-Person Consultation</h3>
-              <p className={generic.cardBody}>
+              <h3>In-Person Consultation</h3>
+              <p>
                 In your house or your favorite coffee shop, we will go over all
                 the details to make your shoot the best it can be.
               </p>
@@ -126,8 +126,8 @@ export default function Home() {
               <IconContext.Provider value={{ className: `${style.icon}` }}>
                 <FaCamera />
               </IconContext.Provider>
-              <h3 SclassName={generic.cardHead}>Photo Shoot Day</h3>
-              <p className={generic.cardBody}>
+              <h3>Photo Shoot Day</h3>
+              <p>
                 The day is here! We will meet in location or at the studio, you
                 will have makeup artist and hair stylist at your service.
               </p>
@@ -136,8 +136,8 @@ export default function Home() {
               <IconContext.Provider value={{ className: `${style.icon}` }}>
                 <FaPhotoVideo />
               </IconContext.Provider>
-              <h3 className={generic.cardHead}>Ordering Session</h3>
-              <p className={generic.cardBody}>
+              <h3>Ordering Session</h3>
+              <p>
                 Last part! we pick your favorite images and pick the products
                 for your home. (Disclaimer: You will love them all!)
               </p>
@@ -158,7 +158,7 @@ export default function Home() {
                 height={240}
               />
               <h3 className={generic.textLg}>Portraiture</h3>
-              <p className={generic.cardBody}>
+              <p>
                 Whether you need professional headshots, senior portraits,
                 portraits for fun or anything in between. We will get the best
                 light for you and capture your personality.
@@ -172,7 +172,7 @@ export default function Home() {
                 height={240}
               />
               <h3 className={generic.textLg}>The Artist’s Collection</h3>
-              <p className={generic.cardBody}>
+              <p>
                 It all begins with an idea. We make it a reality. The Artist’s
                 Collection takes photography to it’s maximum artistic potential
                 and creates the most larger-than-life photographs for you. The
@@ -189,7 +189,7 @@ export default function Home() {
                 height={240}
               />
               <h3 className={generic.textLg}>Commercial</h3>
-              <p className={generic.cardBody}>
+              <p>
                 You business requires your attention in all aspects of it. Here
                 we take the weight of marketing and creative branding out of
                 your back. We produce spectacular content for your brand.
