@@ -20,9 +20,9 @@ export default function Portraits() {
         <Slideshow
           slides={[filler, fillerAlt, filler, fillerAlt, filler, fillerAlt]}
         />
-        <main className={style.main}>
-          <section className={style.section}>
-            <div className={style.segment}>
+        <main className={generic.main}>
+          <section className={generic.section}>
+            <div className={generic.segment}>
               <Image
                 src="/imageFillerVertical.png"
                 alt="filler"
@@ -30,7 +30,7 @@ export default function Portraits() {
                 height={650}
               />
             </div>
-            <div className={style.segment}>
+            <div className={generic.segment}>
               <h2 className={generic.textXL}>
                 Portraits that tell your story.
               </h2>
@@ -49,11 +49,11 @@ export default function Portraits() {
               and your energy. Portraits that are YOURS.
             </p>
           </section>
-          <section className={style.deck}>
+          <section className={generic.deck}>
             <h2 className={generic.textXL}>How does it work?</h2>
-            <div className={style.cards}>
-              <div className={style.card}>
-                <IconContext.Provider value={{ className: `${style.icon}` }}>
+            <div className={generic.cards}>
+              <div className={generic.card}>
+                <IconContext.Provider value={{ className: `${generic.icon}` }}>
                   <FaPhoneAlt />
                 </IconContext.Provider>
                 <h3>Phone Call</h3>
@@ -63,8 +63,8 @@ export default function Portraits() {
                   date.
                 </p>
               </div>
-              <div className={style.card}>
-                <IconContext.Provider value={{ className: `${style.icon}` }}>
+              <div className={generic.card}>
+                <IconContext.Provider value={{ className: `${generic.icon}` }}>
                   <IoPeopleSharp />
                 </IconContext.Provider>
                 <h3>In-Person Consultation</h3>
@@ -73,8 +73,8 @@ export default function Portraits() {
                   all the details to make your shoot the best it can be.
                 </p>
               </div>
-              <div className={style.card}>
-                <IconContext.Provider value={{ className: `${style.icon}` }}>
+              <div className={generic.card}>
+                <IconContext.Provider value={{ className: `${generic.icon}` }}>
                   <FaCamera />
                 </IconContext.Provider>
                 <h3>Photo Shoot Day</h3>
@@ -83,8 +83,8 @@ export default function Portraits() {
                   you will have makeup artist and hair stylist at your service.
                 </p>
               </div>
-              <div className={style.card}>
-                <IconContext.Provider value={{ className: `${style.icon}` }}>
+              <div className={generic.card}>
+                <IconContext.Provider value={{ className: `${generic.icon}` }}>
                   <FaPhotoVideo />
                 </IconContext.Provider>
                 <h3>Ordering Session</h3>
@@ -98,7 +98,7 @@ export default function Portraits() {
               Book your Session
             </Link>
           </section>
-          <section className={style.section}>
+          <section className={generic.section}>
             <div className={style.gallery}>
               <Image src={fillerAlt} alt="" width={300} height={400} />
               <Image src={fillerAlt} alt="" width={300} height={400} />
@@ -118,8 +118,8 @@ export default function Portraits() {
               <Image src={fillerAlt} alt="" width={300} height={400} />
             </div>
           </section>
-          <section className={style.sectionInvert}>
-            <div className={style.segment}>
+          <section className={generic.sectionContrast}>
+            <div className={generic.segment}>
               <h2 className={generic.text2XL}>Model Test Shoot</h2>
               <p className={generic.textM}>
                 Starting in the modeling world requires a great portfolio as a
@@ -130,7 +130,7 @@ export default function Portraits() {
                 Book A Session
               </Link>
             </div>
-            <div className={style.segment}>
+            <div className={generic.segment}>
               <Image
                 src="/imageFillerVertical.png"
                 alt="filler"
@@ -139,8 +139,8 @@ export default function Portraits() {
               />
             </div>
           </section>
-          <section className={style.section}>
-            <div className={style.segment}>
+          <section className={generic.section}>
+            <div className={generic.segment}>
               <p className={generic.textM}>
                 New York City and Washington DC Photography
               </p>
@@ -158,7 +158,7 @@ export default function Portraits() {
                 Book A Session
               </Link>
             </div>
-            <div className={style.segment}>
+            <div className={generic.segment}>
               <Image
                 src="/imageFillerVertical.png"
                 alt="filler"

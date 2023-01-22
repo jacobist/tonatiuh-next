@@ -21,9 +21,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={style.main}>
-        <section className={style.section}>
-          <div className={style.segment}>
+      <main className={generic.main}>
+        <section className={generic.section}>
+          <div className={generic.segment}>
             <p className={generic.textsm}>Tonatiuh Photography</p>
             <h2 className={generic.textXL}>
               Creating breathtaking images for you
@@ -33,7 +33,7 @@ export default function Home() {
               Book A Session
             </Link>
           </div>
-          <div className={style.segment}>
+          <div className={generic.segment}>
             <Image
               src="/imageFillerVertical.png"
               alt="filler"
@@ -42,8 +42,8 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className={style.sectionInvert}>
-          <div className={style.segment}>
+        <section className={generic.sectionInvert}>
+          <div className={generic.segment}>
             <h2 className={generic.text2XL}>
               In The Search for The Perfect Light
             </h2>
@@ -65,7 +65,7 @@ export default function Home() {
               unique expression through the visual arts.
             </p>
           </div>
-          <div className={style.segment}>
+          <div className={generic.segment}>
             <Image
               src="/imageFillerVertical.png"
               alt="filler"
@@ -74,8 +74,8 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className={style.sectionContrast}>
-          <div className={style.segment}>
+        <section className={generic.sectionContrast}>
+          <div className={generic.segment}>
             <h2 className={generic.text2XL}>The Artist&apos;s Collection</h2>
             <p className={generic.textsm}>
               The Artist&apos;s Collection is Santiago Leon Photography&apos;s
@@ -90,7 +90,7 @@ export default function Home() {
               Learn More
             </Link>
           </div>
-          <div className={style.segment}>
+          <div className={generic.segment}>
             <Image
               src="/imageFillerVertical.png"
               alt="filler"
@@ -99,11 +99,11 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className={style.deck}>
+        <section className={generic.deck}>
           <h2 className={generic.textXL}>How does it work?</h2>
-          <div className={style.cards}>
-            <div className={style.card}>
-              <IconContext.Provider value={{ className: `${style.icon}` }}>
+          <div className={generic.cards}>
+            <div className={generic.card}>
+              <IconContext.Provider value={{ className: `${generic.icon}` }}>
                 <FaPhoneAlt />
               </IconContext.Provider>
               <h3>Phone Call</h3>
@@ -112,8 +112,8 @@ export default function Home() {
                 for, we book your session and lock in your session date.
               </p>
             </div>
-            <div className={style.card}>
-              <IconContext.Provider value={{ className: `${style.icon}` }}>
+            <div className={generic.card}>
+              <IconContext.Provider value={{ className: `${generic.icon}` }}>
                 <IoPeopleSharp />
               </IconContext.Provider>
               <h3>In-Person Consultation</h3>
@@ -122,8 +122,8 @@ export default function Home() {
                 the details to make your shoot the best it can be.
               </p>
             </div>
-            <div className={style.card}>
-              <IconContext.Provider value={{ className: `${style.icon}` }}>
+            <div className={generic.card}>
+              <IconContext.Provider value={{ className: `${generic.icon}` }}>
                 <FaCamera />
               </IconContext.Provider>
               <h3>Photo Shoot Day</h3>
@@ -132,8 +132,8 @@ export default function Home() {
                 will have makeup artist and hair stylist at your service.
               </p>
             </div>
-            <div className={style.card}>
-              <IconContext.Provider value={{ className: `${style.icon}` }}>
+            <div className={generic.card}>
+              <IconContext.Provider value={{ className: `${generic.icon}` }}>
                 <FaPhotoVideo />
               </IconContext.Provider>
               <h3>Ordering Session</h3>
@@ -147,10 +147,10 @@ export default function Home() {
             Book your Session
           </Link>
         </section>
-        <section className={style.deck}>
+        <section className={generic.deck}>
           <h2 className={generic.textXL}>Featured Services</h2>
-          <div className={style.cards}>
-            <div className={style.card}>
+          <div className={generic.cards}>
+            <div className={generic.card}>
               <Image
                 src="/imageFiller.png"
                 alt="filler"
@@ -164,7 +164,7 @@ export default function Home() {
                 light for you and capture your personality.
               </p>
             </div>
-            <div className={style.card}>
+            <div className={generic.card}>
               <Image
                 src="/imageFiller.png"
                 alt="filler"
@@ -181,7 +181,7 @@ export default function Home() {
                 there, the limit is your imagination.
               </p>
             </div>
-            <div className={style.card}>
+            <div className={generic.card}>
               <Image
                 src="/imageFiller.png"
                 alt="filler"
@@ -202,7 +202,7 @@ export default function Home() {
         </section>
 
         <Contact home={true}/>
-        <section className={style.section}>
+        <section className={generic.section}>
           <div className={style.background}>
             <Image
               src="/imageFiller.png"

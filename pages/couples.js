@@ -1,10 +1,35 @@
-import Link from "next/link";
+import Link from 'next/link'
+import Image from 'next/image'
+import style from '../styles/Couples.module.css'
+import generic from '../styles/generic.module.css'
+import filler from '../public/imageFiller.png'
+import fillerAlt from '../public/imageFillerVertical.png'
 
 export default function Couples() {
   return (
     <>
-      <h1>Couples page</h1>
-      <Link href="/">Back to home</Link>
+      <main className={generic.main}>
+        <section className={generic.section}>
+          <div className={style.gallery}>
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image src={fillerAlt} alt="" width={300} height={400} />
+          </div>
+        </section>
+      </main>
     </>
   );
 }
