@@ -9,7 +9,7 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 const menuList = [
   {page: 'Portraits', href: "/portraits"},
   {page: 'Couples', href:'/couples'},
-  {page: 'Collection', href:'/collection'}
+  {page: 'Product Photography', href:'/product-photography'}
 ]
 
 export default function Navbar() {
