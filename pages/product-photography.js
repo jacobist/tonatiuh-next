@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import style from "../styles/Couples.module.css";
 import generic from "../styles/generic.module.css";

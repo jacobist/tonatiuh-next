@@ -99,7 +99,7 @@ export default function Portraits() {
             </Link>
           </section>
           <section className={generic.section}>
-            <div className={style.gallery}>
+            <div className={generic.gallery}>
               <Image src={fillerAlt} alt="" width={300} height={400} />
               <Image src={fillerAlt} alt="" width={300} height={400} />
               <Image src={fillerAlt} alt="" width={300} height={400} />

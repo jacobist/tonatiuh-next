@@ -1,8 +1,5 @@
-import Link from 'next/link'
 import Image from 'next/image'
-import style from '../styles/Couples.module.css'
 import generic from '../styles/generic.module.css'
-import filler from '../public/imageFiller.png'
 import fillerAlt from '../public/imageFillerVertical.png'
 
 export default function Couples() {
@@ -10,7 +7,7 @@ export default function Couples() {
     <>
       <main className={generic.main}>
         <section className={generic.section}>
-          <div className={style.gallery}>
+          <div className={generic.gallery}>
             <Image src={fillerAlt} alt="" width={300} height={400} />
             <Image src={fillerAlt} alt="" width={300} height={400} />
             <Image src={fillerAlt} alt="" width={300} height={400} />
