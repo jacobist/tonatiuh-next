@@ -10,12 +10,13 @@
   border-bottom: 1px solid white;
 }
 .links{
-  width: 45rem;
   display:flex;
+  position:relative;
   justify-content: space-around;
   align-items: center;
-  list-style: none;
+  width: 45rem;
   gap: .5rem;
+  list-style: none;
 }
 .vercelLogo{
   filter: invert(1);
@@ -33,4 +34,47 @@
   left: 50%;
   transform: translateX(-50%);
   opacity: 1;
+}
+.menuDefault{
+  transform: translateY(0%);
+}
+
+.menuIcon {
+  display: none;
+}
+@media screen and (max-width:750px) {
+  .header {
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+  .navbar{
+    width: 100%;
+    padding: 1.2rem;
+  }
+  .links{
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    top:100%;
+    left: 0;
+    padding:0 0 2rem;
+    background-color: black;
+  }
+  .menuDefault{
+    transform: translateY(-125%);
+    transition: transform .7s ease;
+  }
+  
+  .opened {
+    transform: translateY(0%);transition: transform .7s ease;
+  }
+  .menuIcon {
+    display: block;
+    background-color: black;
+    color:white;
+  }
 }

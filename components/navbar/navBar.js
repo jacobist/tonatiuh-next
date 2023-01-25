@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 import { useRouter } from "next/router";
 import style from './navBar.module.css'
 import generic from '../../styles/generic.module.css'
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTimes, FaBars } from "react-icons/fa";
 
 // list for dynamic Navigation Menu Items
 const menuList = [
@@ -13,10 +14,12 @@ const menuList = [
 ]
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false)
+  const menuToggle = ()=> setOpen(!open)
 // for active link tracking
   const router = useRouter()
   return (
-    <>
+    <header className={style.header}>
       <a href="#main" className={style.linktomain}>
         Skip to main content
       </a>
@@ -29,7 +32,13 @@ export default function Navbar() {
           height={24}
           priority
         />
-        <ul className={style.links}>
+        <ul
+          className={
+            open
+              ? `${style.links} ${style.opened}`
+              : `${style.links} ${style.menuDefault}`
+          }
+        >
           <li className={router.pathname == "/" ? `${style.active}` : ""}>
             <Link href="/">Home</Link>
           </li>
@@ -57,10 +66,15 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <Link className={generic.ctaContrast} href='/booking'>Book A Session</Link>
+            <Link className={generic.ctaContrast} href="/booking">
+              Book A Session
+            </Link>
           </li>
         </ul>
+        <button className={style.menuIcon} onClick={menuToggle}>
+          {open ? <FaTimes /> : <FaBars />}
+        </button>
       </nav>
-    </>
+    </header>
   );
 }
