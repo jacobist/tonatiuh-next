@@ -8,7 +8,8 @@ import { FaFacebookF, FaInstagram, FaTimes, FaBars } from "react-icons/fa";
 
 // list for dynamic Navigation Menu Items
 const menuList = [
-  {page: 'Portraits', href: "/portraits"},
+  {page: 'Home', href:'/'},
+  {page: 'Portraits', href: '/portraits'},
   {page: 'Couples', href:'/couples'},
   {page: 'Product Photography', href:'/product-photography'}
 ]
@@ -16,6 +17,8 @@ const menuList = [
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const menuToggle = ()=> setOpen(!open)
+  const closeMenu = () => setOpen(false)
+
 // for active link tracking
   const router = useRouter()
   return (
@@ -39,9 +42,9 @@ export default function Navbar() {
               : `${style.links} ${style.menuDefault}`
           }
         >
-          <li className={router.pathname == "/" ? `${style.active}` : ""}>
+          {/* <li className={router.pathname == "/" ? `${style.active}` : ""}>
             <Link href="/">Home</Link>
-          </li>
+          </li> */}
           {/* dynamic menu item links*/}
           {menuList.map((item) => {
             return (
@@ -50,6 +53,7 @@ export default function Navbar() {
                 className={
                   router.pathname == `${item.href}` ? `${style.active}` : ""
                 }
+                onClick={closeMenu}
               >
                 <Link href={item.href}>{item.page}</Link>
               </li>
