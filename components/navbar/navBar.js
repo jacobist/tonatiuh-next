@@ -60,17 +60,17 @@ export default function Navbar() {
             );
           })}
           <li>
-            <a href="#">
+            <a href="#" onClick={closeMenu}>
               <FaFacebookF />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" onClick={closeMenu}>
               <FaInstagram />
             </a>
           </li>
           <li>
-            <Link className={generic.ctaContrast} href="/booking">
+            <Link className={generic.ctaContrast} href="/booking" onClick={closeMenu}>
               Book A Session
             </Link>
           </li>
