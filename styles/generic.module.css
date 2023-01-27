@@ -5,43 +5,43 @@
 }
 .section {
   display: inherit;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 4rem 0;
-}
-.segment {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  row-gap: 2.1rem;
-  width: 550px;
-}.sectionInvert {
+  align-items: center;
+  width: 100%;
+  padding: 3rem;
+  gap:1rem;
+}
+.sectionInvert {
   display: inherit;
   flex-direction: row-reverse;
   justify-content: center;
   width: 100%;
-  padding: 4rem 0;
+  padding: 5rem;
+  gap: 4rem;
 }
 .sectionContrast {
   display: inherit;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: black;
   color: white;
   width: 100%;
-  padding: 4rem 0;
+  padding: 5rem;
+}
+.segment {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 42%;
 }
 .sectionInvert .segment,
 .sectionContrast .segment {
-  justify-content: flex-start;
-  width: 420px;
-  margin: 0 3rem;
+  width: 30%;
 }
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 1rem;
-  ;
 }
 .deck {
   display: flex;
@@ -87,11 +87,11 @@
   width:fit-content;
 }
 .textsm {
+  font-size: 1rem;
   font-weight: 300;
-  line-height: 2rem;
 }
 .textM {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 300;
 }
 .textLg {
@@ -100,12 +100,65 @@
 }
 .textXL {
   font-weight: 500;
-  font-size: 2.9rem;
+  font-size: 2.7rem;
   line-height: 4rem;
   letter-spacing: -.01rem;
 }
 .text2XL {
   font-weight: 500;
-  font-size: 4rem;
-  line-height: 5rem;
+  font-size: 3.8rem;
+  line-height: 4.5rem;
+}
+
+@media screen and (max-width: 750px){
+  .section{
+    flex-direction: column-reverse;
+    padding: 2rem;
+  }
+  .sectionInvert{
+    flex-direction: column-reverse;
+    padding:2rem;
+  }
+  .sectionContrast{
+    flex-direction: column-reverse;
+    padding:2rem;
+  }
+  .segment, .sectionInvert .segment,
+  .sectionContrast .segment{
+    width: 100%;
+  }
+  .deck{
+    padding:2rem;
+  }
+  .cards{
+    flex-direction: column;
+    padding: 0;
+  }
+  .cta, .ctaContrast{
+    font-size: 1.3rem;
+  }
+  .textsm {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  .textM {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .textLg {
+    font-size: 2.1rem;
+    font-weight: 500;
+  }
+  .textXL {
+    font-weight: 500;
+    font-size: 2.9rem;
+    line-height: 4rem;
+    letter-spacing: -.01rem;
+  }
+  .text2XL {
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
 }
