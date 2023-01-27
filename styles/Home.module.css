@@ -7,38 +7,39 @@
   right: 43%;
   z-index: 1;
 }
-
-
-
-
-
-
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  /* .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  } */
+.imageSm {
+  width: 20rem;
+  height: 12rem;
+}
+.imageM{
+  width:25rem;
+  height:25rem;
+}
+.imageL {
+  width: 90%;
+}
+.imageInsta{
+  width:70rem;
+  height:17rem;
 }
 
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
-  }
-
+@media screen and (max-width:750px){
+  .imageSm, .imageM, .imageL, .imageInsta {
+      width: 99%;
+      height: auto;
+    }
+/*   
+    .imageM {
+      width: 25rem;
+      height: 25rem;
+    }
+  
+    .imageL {
+      width: 50%;
+    }
+  
+    .imageInsta {
+      width: 70rem;
+      height: 17rem;
+    } */
 }
-
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
-}
-
-

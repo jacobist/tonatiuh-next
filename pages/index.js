@@ -7,6 +7,7 @@ import generic from '../styles/generic.module.css'
 import { FaPhoneAlt, FaCamera, FaPhotoVideo } from "react-icons/fa";
 import { IoPeopleSharp } from 'react-icons/io5'
 import { IconContext } from 'react-icons'
+import filler from "../public/imageFiller.png";
 
 
 export default function Home() {
@@ -34,12 +35,7 @@ export default function Home() {
             </Link>
           </div>
           <div className={generic.segment}>
-            <Image
-              src="/imageFillerVertical.png"
-              alt="filler"
-              width={550}
-              height={700}
-            />
+            <Image className={style.imageL} src={filler} alt="filler" />
           </div>
         </section>
         <section className={generic.sectionInvert}>
@@ -66,12 +62,7 @@ export default function Home() {
             </p>
           </div>
           <div className={generic.segment}>
-            <Image
-              src="/imageFillerVertical.png"
-              alt="filler"
-              width={420}
-              height={550}
-            />
+            <Image className={style.imageL} src={filler} alt="filler" />
           </div>
         </section>
         <section className={generic.sectionContrast}>
@@ -91,12 +82,7 @@ export default function Home() {
             </Link>
           </div>
           <div className={generic.segment}>
-            <Image
-              src="/imageFillerVertical.png"
-              alt="filler"
-              width={420}
-              height={420}
-            />
+            <Image className={style.imageM} src={filler} alt="filler" />
           </div>
         </section>
         <section className={generic.deck}>
@@ -151,12 +137,7 @@ export default function Home() {
           <h2 className={generic.textXL}>Featured Services</h2>
           <div className={generic.cards}>
             <div className={generic.card}>
-              <Image
-                src="/imageFiller.png"
-                alt="filler"
-                width={380}
-                height={240}
-              />
+              <Image className={style.imageSm} src={filler} alt="filler" />
               <h3 className={generic.textLg}>Portraiture</h3>
               <p>
                 Whether you need professional headshots, senior portraits,
@@ -165,12 +146,7 @@ export default function Home() {
               </p>
             </div>
             <div className={generic.card}>
-              <Image
-                src="/imageFiller.png"
-                alt="filler"
-                width={380}
-                height={240}
-              />
+              <Image className={style.imageSm} src={filler} alt="filler" />
               <h3 className={generic.textLg}>The Artist’s Collection</h3>
               <p>
                 It all begins with an idea. We make it a reality. The Artist’s
@@ -182,12 +158,7 @@ export default function Home() {
               </p>
             </div>
             <div className={generic.card}>
-              <Image
-                src="/imageFiller.png"
-                alt="filler"
-                width={380}
-                height={240}
-              />
+              <Image className={style.imageSm} src={filler} alt="filler" />
               <h3 className={generic.textLg}>Commercial</h3>
               <p>
                 You business requires your attention in all aspects of it. Here
@@ -201,15 +172,10 @@ export default function Home() {
           </Link>
         </section>
 
-        <Contact home={true}/>
+        <Contact home={true} />
         <section className={generic.section}>
           <div className={style.background}>
-            <Image
-              src="/imageFiller.png"
-              alt="filler"
-              width={1100}
-              height={280}
-            />
+            <Image className={style.imageInsta} src={filler} alt="filler" />
             <Link className={`${generic.cta} ${style.overlay}`} href="/booking">
               INSTAGRAM
             </Link>
