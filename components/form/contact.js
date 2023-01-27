@@ -20,9 +20,9 @@ export default function Contact ({home=false}) {
   return (
     <main className={style.main}>
       <div className={style.contact}>
-        <h1 className={generic.text2XL}>Get in touch</h1>
+        <h1 className={`${generic.textXL} ${style.heading}`}>Get in touch</h1>
         <div className={style.info}>
-          <div>
+          <div className={style.info}>
             <h3>Let&apos;s create!</h3>
             <p>Tonatiuh@gmail.com</p>
             <br />
