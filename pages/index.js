@@ -35,7 +35,7 @@ export default function Home() {
             </Link>
           </div>
           <div className={generic.segment}>
-            <Image className={style.imageL} src={filler} alt="filler" />
+            <Image className={generic.imageL} src={filler} alt="filler" />
           </div>
         </section>
         <section className={generic.sectionInvert}>
@@ -62,7 +62,7 @@ export default function Home() {
             </p>
           </div>
           <div className={generic.segment}>
-            <Image className={style.imageL} src={filler} alt="filler" />
+            <Image className={generic.imageL} src={filler} alt="filler" />
           </div>
         </section>
         <section className={generic.sectionContrast}>
@@ -82,7 +82,7 @@ export default function Home() {
             </Link>
           </div>
           <div className={generic.segment}>
-            <Image className={style.imageM} src={filler} alt="filler" />
+            <Image className={generic.imageM} src={filler} alt="filler" />
           </div>
         </section>
         <section className={generic.deck}>
@@ -137,7 +137,7 @@ export default function Home() {
           <h2 className={generic.textXL}>Featured Services</h2>
           <div className={generic.cards}>
             <div className={generic.card}>
-              <Image className={style.imageSm} src={filler} alt="filler" />
+              <Image className={generic.imageSm} src={filler} alt="filler" />
               <h3 className={generic.textLg}>Portraiture</h3>
               <p>
                 Whether you need professional headshots, senior portraits,
@@ -146,7 +146,7 @@ export default function Home() {
               </p>
             </div>
             <div className={generic.card}>
-              <Image className={style.imageSm} src={filler} alt="filler" />
+              <Image className={generic.imageSm} src={filler} alt="filler" />
               <h3 className={generic.textLg}>The Artist’s Collection</h3>
               <p>
                 It all begins with an idea. We make it a reality. The Artist’s
@@ -158,7 +158,7 @@ export default function Home() {
               </p>
             </div>
             <div className={generic.card}>
-              <Image className={style.imageSm} src={filler} alt="filler" />
+              <Image className={generic.imageSm} src={filler} alt="filler" />
               <h3 className={generic.textLg}>Commercial</h3>
               <p>
                 You business requires your attention in all aspects of it. Here
@@ -174,11 +174,11 @@ export default function Home() {
 
         <Contact home={true} />
         <section className={generic.section}>
-          <div className={style.background}>
-            <Image className={style.imageInsta} src={filler} alt="filler" />
-            <Link className={`${generic.cta} ${style.overlay}`} href="/booking">
+          <div className={style.overlay}>
+            <Link className={`${generic.cta} ${style.background}`} href="/booking">
               INSTAGRAM
             </Link>
+            <Image className={style.imageInsta} src={filler} alt="filler" />
           </div>
         </section>
       </main>

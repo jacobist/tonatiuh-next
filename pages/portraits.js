@@ -23,12 +23,7 @@ export default function Portraits() {
         <main className={generic.main}>
           <section className={generic.section}>
             <div className={generic.segment}>
-              <Image
-                src="/imageFillerVertical.png"
-                alt="filler"
-                width={550}
-                height={650}
-              />
+              <Image className={generic.imageL} src={filler} alt="filler" />
             </div>
             <div className={generic.segment}>
               <h2 className={generic.textXL}>
@@ -100,22 +95,22 @@ export default function Portraits() {
           </section>
           <section className={generic.section}>
             <div className={generic.gallery}>
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
-              <Image src={fillerAlt} alt="" width={300} height={400} />
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
+              <Image className={generic.frame}src={fillerAlt} alt=""/>
             </div>
           </section>
           <section className={generic.sectionContrast}>
@@ -131,12 +126,9 @@ export default function Portraits() {
               </Link>
             </div>
             <div className={generic.segment}>
-              <Image
-                src="/imageFillerVertical.png"
-                alt="filler"
-                width={550}
-                height={450}
-              />
+              <div className={generic.segment}>
+                <Image className={generic.imageM} src={filler} alt="filler" />
+              </div>
             </div>
           </section>
           <section className={generic.section}>
@@ -144,7 +136,7 @@ export default function Portraits() {
               <p className={generic.textM}>
                 New York City and Washington DC Photography
               </p>
-              <h2 className={generic.textXL}>
+              <h2 className={generic.textLg}>
                 Photography in these two beautiful cities has never been better.
               </h2>
               <p className={generic.textsm}>
@@ -159,12 +151,7 @@ export default function Portraits() {
               </Link>
             </div>
             <div className={generic.segment}>
-              <Image
-                src="/imageFillerVertical.png"
-                alt="filler"
-                width={550}
-                height={550}
-              />
+              <Image className={generic.imageM} src={filler} alt="filler" />
             </div>
           </section>
         </main>

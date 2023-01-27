@@ -9,3 +9,8 @@
   font-size: 1.2rem;
   font-weight: 500;
 }
+@media screen and (max-width: 750px){
+  .banner{
+    padding: 3rem;
+  }
+}

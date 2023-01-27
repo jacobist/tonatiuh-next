@@ -9,22 +9,22 @@ export default function Collection() {
       <main className={generic.main}>
         <section className={generic.section}>
           <div className={generic.gallery}>
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
-            <Image src={fillerAlt} alt="" width={300} height={400} />
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
+            <Image className={generic.frame}src={fillerAlt} alt=""/>
           </div>
         </section>
       </main>

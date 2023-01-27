@@ -1,45 +1,16 @@
-.background{
-  position: relative;
-}
 .overlay{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.background{
   position:absolute;
-  top: 43%;
-  right: 43%;
   z-index: 1;
 }
-.imageSm {
-  width: 20rem;
-  height: 12rem;
-}
-.imageM{
-  width:25rem;
-  height:25rem;
-}
-.imageL {
-  width: 90%;
-}
-.imageInsta{
-  width:70rem;
-  height:17rem;
+.imageInsta {
+  width: 70vw;
+  height: 15rem;
 }
 
-@media screen and (max-width:750px){
-  .imageSm, .imageM, .imageL, .imageInsta {
-      width: 99%;
-      height: auto;
-    }
-/*   
-    .imageM {
-      width: 25rem;
-      height: 25rem;
-    }
-  
-    .imageL {
-      width: 50%;
-    }
-  
-    .imageInsta {
-      width: 70rem;
-      height: 17rem;
-    } */
-}
