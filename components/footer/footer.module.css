@@ -2,8 +2,10 @@
   display: flex;
   justify-content: space-around;
   padding: 3rem;
+  gap: 2rem;
   background-color: black;
   color:white;
+  border-top: 1px solid white;
 }
 .left{
   display: flex;
@@ -14,4 +16,10 @@
 }
 .vercelLogo {
   filter: invert(1);
+}
+
+@media screen and (max-width:750px){
+  .footer{
+    flex-direction: column;
+  }
 }

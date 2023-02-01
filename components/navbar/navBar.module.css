@@ -5,6 +5,7 @@
   background-color: rgb(0, 0, 0);
   color: white;
   padding: 3rem 9rem;
+  border-bottom: 1px solid white;
 }
 .active {
   border-bottom: 1px solid white;

@@ -22,13 +22,23 @@ export default function Contact ({home=false}) {
       <div className={style.contact}>
         <h1 className={`${generic.textXL} ${style.heading}`}>Get in touch</h1>
         <div className={style.info}>
-          <div className={style.info}>
+          <div>
             <h3>Let&apos;s create!</h3>
             <p>Tonatiuh@gmail.com</p>
             <br />
             <p>(661) 406-1519</p>
+            <br />
           </div>
-          { !home ? <Image src="/imageFiller.png" alt="filler" width="250" height="250" /> : '' }
+          {!home ? (
+            <Image
+              src="/imageFiller.png"
+              alt="filler"
+              width="250"
+              height="250"
+            />
+          ) : (
+            ""
+          )}
         </div>
         <div className={style.links}>
           <a href="#">
@@ -116,7 +126,9 @@ export default function Contact ({home=false}) {
             name="message"
           />
         </div>
-        <button className={generic.cta}>{sent ? "Sent!" : "Send Message"}</button>
+        <button className={generic.cta}>
+          {sent ? "Sent!" : "Send Message"}
+        </button>
       </form>
     </main>
   );

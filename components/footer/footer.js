@@ -6,6 +6,7 @@ export default function Footer() {
     <footer className={style.footer}>
       <div className={style.left}>
         <a href="mailto:hermes@email.com">hermes@email.com</a>
+        <br />
         <a href="tel:+1">(888)888-8888</a>
       </div>
       <Image
@@ -18,7 +19,9 @@ export default function Footer() {
       />
       <div className={style.right}>
         <p>
-          © Hermes Tonatiuh Photography & Design.<br/>
+          © Hermes Tonatiuh Photography & Design.
+          <br />
+          <br />
           All Rights Reserved.
         </p>
       </div>
