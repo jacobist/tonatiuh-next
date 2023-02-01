@@ -70,7 +70,7 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <Link className={generic.ctaContrast} href="/booking" onClick={closeMenu}>
+            <Link className={generic.cta} href="/booking" onClick={closeMenu}>
               Book A Session
             </Link>
           </li>

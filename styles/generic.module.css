@@ -94,13 +94,6 @@
   padding: 1rem 1rem;
   width:fit-content;
 }
-.ctaContrast {
-  font-weight: 500;
-  color: black;
-  background-color: white;
-  padding: 1rem 1.2rem;
-  width:fit-content;
-}
 .textsm {
   font-size: 1rem;
   font-weight: 300;
@@ -159,7 +152,7 @@
   .imageL{
     width:100%
   }
-  .cta, .ctaContrast{
+  .cta{
     font-size: 1.3rem;
   }
   .textsm {

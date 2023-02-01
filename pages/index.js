@@ -77,7 +77,7 @@ export default function Home() {
               guide you through the fascinating process of creating artistic
               imagery.
             </p>
-            <Link className={generic.ctaContrast} href="/booking">
+            <Link className={generic.cta} href="/booking">
               Learn More
             </Link>
           </div>
