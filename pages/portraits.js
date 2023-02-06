@@ -18,7 +18,7 @@ export default function Portraits() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Slideshow
-          slides={[filler, fillerAlt, filler, fillerAlt, filler, fillerAlt]}
+          album={[filler, fillerAlt, filler, fillerAlt, filler, fillerAlt]}
         />
         <main className={generic.main}>
           <section className={generic.section}>
@@ -121,7 +121,7 @@ export default function Portraits() {
                 head start. Here I can help you to have your best look and be
                 ready to start booking jobs.
               </p>
-              <Link className={generic.ctaContrast} href="/booking">
+              <Link className={generic.cta} href="/booking">
                 Book A Session
               </Link>
             </div>

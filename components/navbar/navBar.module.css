@@ -71,7 +71,8 @@
   }
   
   .opened {
-    transform: translateY(0%);transition: transform .7s ease;
+    transform: translateY(0%);
+    transition: transform .7s ease;
   }
   .menuIcon {
     display: block;
